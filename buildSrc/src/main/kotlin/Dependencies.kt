@@ -31,5 +31,7 @@ object Dependencies {
     const val amapSearch = "com.amap.api:search:latest.integration"
     //statusbar
     const val statusbarutil = "com.jaeger.statusbarutil:library:1.5.1"
-    
+    //coil图片加载
+    const val coilKt = "io.coil-kt:coil:1.4.0"
+
 }

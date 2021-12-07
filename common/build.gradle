@@ -53,5 +53,6 @@ dependencies {
     api Dependencies.amapLocation
     api Dependencies.amapSearch
     api Dependencies.statusbarutil
+    api Dependencies.coilKt
 
 }

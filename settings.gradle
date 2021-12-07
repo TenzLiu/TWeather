@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "TWeather"
 include ':app'
 include ':common'
+include ':login'

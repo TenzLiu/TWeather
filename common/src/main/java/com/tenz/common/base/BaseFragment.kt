@@ -9,6 +9,10 @@ import androidx.viewbinding.ViewBinding
 import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.ParameterizedType
 
+/**
+ * BaseFragment
+ * VB ViewBinding
+ */
 abstract class BaseFragment<VB : ViewBinding> : Fragment() {
 
     var binding : VB? = null
