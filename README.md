@@ -8,7 +8,7 @@
 * Material Design+ConstraintLayout
 * okhttp+retrofit
 * kotlin协程+扩展函数
-* Koil代替glide
+* Coil代替glide
 * mmkv序列化
 * Navigation导航
 * Room数据库
