@@ -1,12 +1,12 @@
 package com.tenz.tweather
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.tenz.common.base.BaseActivity
+import com.tenz.tweather.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity<ActivityMainBinding>() {
+
+    override fun init() {
 
     }
+
 }

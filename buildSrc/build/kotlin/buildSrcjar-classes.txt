@@ -1,1 +1,1 @@
-D:\androidstudio\TWeather\buildSrc\build\classes\kotlin\main\Dependencies.class;D:\androidstudio\TWeather\buildSrc\build\classes\kotlin\main\Versions.class
+D:\androidstudio\TWeather\buildSrc\build\classes\kotlin\main\Config.class;D:\androidstudio\TWeather\buildSrc\build\classes\kotlin\main\Dependencies.class
