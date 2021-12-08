@@ -33,5 +33,8 @@ object Dependencies {
     const val statusbarutil = "com.jaeger.statusbarutil:library:1.5.1"
     //coil图片加载
     const val coilKt = "io.coil-kt:coil:1.4.0"
+    //ARouter
+    const val arouter = "com.alibaba:arouter-api:1.5.2"
+    const val arouterCompiler = "com.alibaba:arouter-compiler:1.5.2"
 
 }

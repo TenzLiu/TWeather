@@ -54,5 +54,7 @@ dependencies {
     api Dependencies.amapSearch
     api Dependencies.statusbarutil
     api Dependencies.coilKt
+    api Dependencies.arouter
+
 
 }

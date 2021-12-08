@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.view.animation.AnimationSet
+import com.alibaba.android.arouter.launcher.ARouter
 import com.tenz.common.app.Constants
 import com.tenz.common.base.BaseActivity
 import com.tenz.common.utils.AppUtil
@@ -36,7 +37,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
                 if(isLogin){
                     startActivity(Intent(this@SplashActivity, MainActivity::class.java))
                 }else{
-                    startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                    ARouter.getInstance().build(Constants.PATH_LOGIN).navigation()
                 }
                 finish()
             }
