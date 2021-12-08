@@ -13,7 +13,7 @@ import java.lang.reflect.ParameterizedType
  */
 abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
-    var binding : VB? = null
+    var ui : VB? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,8 +22,8 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
             val parameterizedType = genericSuperclass as ParameterizedType
             val vmClass = parameterizedType.actualTypeArguments[0] as Class<VB>
             val method = vmClass.getMethod("inflate", LayoutInflater::class.java)
-            binding = method.invoke(null, layoutInflater) as VB
-            setContentView(binding!!.root)
+            ui = method.invoke(null, layoutInflater) as VB
+            setContentView(ui!!.root)
         } catch (e: NoSuchMethodException) {
             e.printStackTrace()
         } catch (e: IllegalAccessException) {
@@ -41,7 +41,7 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        binding = null
+        ui = null
     }
 
 

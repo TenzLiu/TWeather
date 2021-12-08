@@ -36,5 +36,11 @@ object Dependencies {
     //ARouter
     const val arouter = "com.alibaba:arouter-api:1.5.2"
     const val arouterCompiler = "com.alibaba:arouter-compiler:1.5.2"
+    //Room
+    const val roomRuntime = "androidx.room:room-runtime:2.3.0"
+    const val roomKtx = "androidx.room:room-ktx:2.3.0"
+    const val roomCompiler = "androidx.room:room-compiler:2.3.0"
+    //gson
+    const val gson = "com.google.code.gson:gson:2.8.6"
 
 }

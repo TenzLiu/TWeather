@@ -15,7 +15,7 @@ import java.lang.reflect.ParameterizedType
  */
 abstract class BaseFragment<VB : ViewBinding> : Fragment() {
 
-    var binding : VB? = null
+    var ui : VB? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,8 +27,8 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
             val parameterizedType = genericSuperclass as ParameterizedType
             val vmClass = parameterizedType.actualTypeArguments[0] as Class<VB>
             val method = vmClass.getMethod("inflate", LayoutInflater::class.java)
-            binding = method.invoke(null, layoutInflater) as VB
-            return binding!!.root
+            ui = method.invoke(null, layoutInflater) as VB
+            return ui!!.root
         } catch (e: NoSuchMethodException) {
             e.printStackTrace()
         } catch (e: IllegalAccessException) {
@@ -42,6 +42,11 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         init()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        ui = null
     }
 
     /**

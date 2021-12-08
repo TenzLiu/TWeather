@@ -55,6 +55,9 @@ dependencies {
     api Dependencies.statusbarutil
     api Dependencies.coilKt
     api Dependencies.arouter
+    api Dependencies.roomRuntime
+    api Dependencies.roomKtx
+    api Dependencies.gson
 
 
 }

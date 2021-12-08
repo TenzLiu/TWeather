@@ -14,8 +14,8 @@ import com.tenz.tweather.databinding.ActivitySplashBinding
 class SplashActivity : BaseActivity<ActivitySplashBinding>() {
 
     override fun init() {
-        binding!!.tvAppName.text = getString(R.string.app_name)
-        binding!!.tvVersionName.text = AppUtil.getAppVersionName(AppUtil.getContext())
+        ui!!.tvAppName.text = getString(R.string.app_name)
+        ui!!.tvVersionName.text = AppUtil.getAppVersionName(AppUtil.getContext())
 
         startAnima()
     }
@@ -46,9 +46,9 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
             }
 
         })
-        binding!!.ivLogo.animation = animationSet
-        binding!!.tvAppName.animation = animationSet
-        binding!!.tvVersionName.animation = animationSet
+        ui!!.ivLogo.animation = animationSet
+        ui!!.tvAppName.animation = animationSet
+        ui!!.tvVersionName.animation = animationSet
     }
 
 }
