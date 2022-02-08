@@ -9,7 +9,6 @@ import com.tenz.tweather.databinding.ActivityMainBinding
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun init() {
-
     }
 
 }

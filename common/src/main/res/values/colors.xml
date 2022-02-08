@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="app_color">#3399CC</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="blue">#3399CC</color>
-    <color name="black_weak">#424242</color>
-    <color name="blue_weak">#8CD2FB</color>
+    <color name="bg_color">#FAFAFA</color>
+    <color name="color_black">#FF000000</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_blue">#3399CC</color>
+    <color name="color_black_weak">#424242</color>
+    <color name="color_blue_weak">#8CD2FB</color>
+    <color name="color_green">#68C072</color>
+    <color name="color_yellow">#FFBC48</color>
+    <color name="color_gray">#747474</color>
+    <color name="color_gray_white">#F7F7F7</color>
+    <color name="color_line">#F9FBFC</color>
+    <color name="color_red">#FD3824</color>
+
+    <color name="text_color_black">#232323</color>
+    <color name="text_color_gray">#888888</color>
 </resources>
